@@ -1,609 +1,954 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desa Sumurlaban</title>
-    <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
   </head>
   <body>
-    <!-- nav -->
-    <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
-    >
-      <div class="container">
-        <div class="flex items-center justify-between relative">
-          <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-gru block py-6"
-              >Desa Sumurlaban</a
-            >
-          </div>
-          <div class="flex items-center px-4">
-            <button
-              id="hamburger"
-              name="hamburger"
-              type="button"
-              class="block absolute right-4 lg:hidden"
-            >
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out"
-              ></span>
-              <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
-              ></span>
-            </button>
-            <nav
-              id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
-            >
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a
-                    href="#home"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Beranda</a
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desa Landing Page</title>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <!-- Header -->
+        <header class="bg-white shadow-md">
+          <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+              <!-- Logo -->
+              <div class="text-xl font-bold text-gray-800">
+                <a href="#">Desa Sumurlaban</a>
+              </div>
+              <!-- Nav -->
+              <nav class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800"
+                  >Tentang Kami</a
+                >
+                <a href="#" class="text-gray-600 hover:text-gray-800"
+                  >Program</a
+                >
+                <a href="#" class="text-gray-600 hover:text-gray-800"
+                  >Publikasi</a
+                >
+                <a href="#" class="text-gray-600 hover:text-gray-800">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Kontak</a>
+              </nav>
+              <!-- Mobile Menu Button -->
+              <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                  <svg
+                    class="w-6 h-6 text-gray-800"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                </li>
-                <li class="group">
-                  <a
-                    href="#about"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Tentang Kami</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#articles"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Artikel</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#gallery"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Galeri</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#news"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Berita</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#contact"
-                    class="text-base text-dark py-2 mx-8 flex group-hover:text-gru"
-                    >Kontak</a
-                  >
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- end nav -->
-
-    <!-- Hero Section Start -->
-    <section id="home" class="pt-36 bg-slate-100">
-      <div class="container mx-auto">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-gru md:text-xl">
-              Selamat Datang di
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
-                >Desa Sumurlaban</span
-              >
-            </h1>
-            <h2 class="font-medium text-gru text-lg mb-5 lg:text-2xl">
-              Jelajahi keindahan dan tradisi desa kami
-            </h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
-              Temukan budaya, acara, dan atraksi lokal kami.
-            </p>
-            <a
-              href="#contact"
-              class="text-base font-semibold text-white bg-gru py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Hubungi Kami</a
-            >
-          </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img
-                src="assets/logo sumurlaban.png"
-                alt="Logo Desa Sumurlaban"
-                class="w-full h-auto object-cover lg:max-w-full"
-              />
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32 bg-slate-100">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h4 class="font-bold uppercase text-gru text-lg mb-3">
-              Tentang Kami
-            </h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
-              Selamat Datang di Desa Sumurlaban
-            </h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
-              Desa Sumurlaban adalah desa yang indah dengan warisan budaya yang
-              kaya dan keindahan alam yang menakjubkan. Komunitas kami
-              berdedikasi untuk menjaga tradisi kami sambil merangkul
-              kemodernan.
-            </p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3
-              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
-            >
-              Sejarah Kami
-            </h3>
-            <p class="font-medium text-base text-secondary mb-8 lg:text-lg">
-              Didirikan pada awal abad ke-19, Desa Sumurlaban memiliki sejarah
-              yang kaya akan perkembangan budaya dan pertanian. Desa kami telah
-              berkembang seiring waktu, namun tetap mempertahankan pesona dan
-              nilai-nilai tradisionalnya.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl">
-              Misi dan Visi
-            </h3>
-            <p class="font-medium text-base text-secondary mb-8 lg:text-lg">
-              Misi kami adalah menjaga dan mempromosikan warisan budaya kami
-              sambil mendorong pembangunan berkelanjutan. Visi kami adalah
-              menjadi desa teladan yang dikenal karena keharmonisan,
-              keramahtamahan, dan kehidupan komunitas yang vibrant.
-            </p>
-          </div>
-          <div class="w-full px-4 lg:w-1/2">
-            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl">
-              Layanan Komunitas
-            </h3>
-            <p class="font-medium text-base text-secondary mb-8 lg:text-lg">
-              Kami menawarkan berbagai layanan komunitas termasuk perawatan
-              kesehatan, pendidikan, dan dukungan bisnis lokal. Desa kami
-              berkomitmen untuk meningkatkan kualitas hidup bagi semua penduduk
-              melalui upaya kolaboratif dan inovasi.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Articles Section Start -->
-    <section id="articles" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-gru mb-2 uppercase">
-              Artikel
-            </h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Artikel Terbaru Kami
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Jelajahi wawasan dan cerita dari desa kami.
-            </p>
-          </div>
-        </div>
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-        >
-          <div class="mb-12 p-4 md:w-1/2">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 1.jpg"
-                alt="Artikel 1"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Artikel 1
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat artikel.
-            </p>
-            <a
-              href="article1.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Baca Selengkapnya</a
-            >
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 3.jpg"
-                alt="Artikel 2"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Artikel 2
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat artikel.
-            </p>
-            <a
-              href="article2.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Baca Selengkapnya</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Articles Section End -->
-
-    <!-- Gallery Section Start -->
-    <section id="gallery" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-gru mb-2 uppercase">
-              Galeri
-            </h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Galeri Foto Kami
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Lihat momen indah yang diabadikan di desa kami.
-            </p>
-          </div>
-        </div>
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-        >
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 4.jpg"
-                alt="Galeri 1"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Galeri 1
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat galeri.
-            </p>
-            <a
-              href="gallery1.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Lihat Selengkapnya</a
-            >
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 5.jpg"
-                alt="Galeri 2"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Galeri 2
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat galeri.
-            </p>
-            <a
-              href="gallery2.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Lihat Selengkapnya</a
-            >
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 6.jpg"
-                alt="Galeri 3"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Galeri 3
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat galeri.
-            </p>
-            <a
-              href="gallery3.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Lihat Selengkapnya</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Gallery Section End -->
-
-    <!-- News Section Start -->
-    <section id="news" class="pt-36 pb-16 bg-slate-100">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-gru mb-2 uppercase">
-              Berita
-            </h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Berita Terbaru Kami
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              Tetap up-to-date dengan berita terbaru dari desa kami.
-            </p>
-          </div>
-        </div>
-        <div
-          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
-        >
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 7.jpg"
-                alt="Berita 1"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Berita 1
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat berita.
-            </p>
-            <a
-              href="news1.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Baca Selengkapnya</a
-            >
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 8.jpg"
-                alt="Berita 2"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Berita 2
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat berita.
-            </p>
-            <a
-              href="news2.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Baca Selengkapnya</a
-            >
-          </div>
-          <div class="mb-12 p-4 md:w-1/2 lg:w-1/3">
-            <div
-              class="rounded-md shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 ease-in-out"
-            >
-              <img
-                src="assets/foto 9.jpg"
-                alt="Berita 3"
-                class="w-full lazy"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3">
-              Judul Berita 3
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Deskripsi singkat berita.
-            </p>
-            <a
-              href="news3.html"
-              class="bg-gru text-white px-4 py-2 rounded-full mt-6 hover:bg-dark hover:text-white"
-              >Baca Selengkapnya</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- News Section End -->
-
-    <!-- Start Contact -->
-    <section id="contact" class="pt-36 pb-32">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-gru mb-2">Contact</h4>
-            <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
-            >
-              Contact Us
-            </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              If you're interested in collaborating or have any questions,
-              please contact us using one of the methods below
-            </p>
-          </div>
-        </div>
-
-        <form action="">
-          <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full mb-8 px-4">
-              <label for="name" class="text-base font-bold text-gru"
-                >Name</label
-              >
-              <input
-                type="text"
-                id="name"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-gru focus:ring-1 focus:border-gru"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="email" class="text-base font-bold text-gru"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-gru focus:ring-1 focus:border-gru"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="message" class="text-base font-bold text-gru"
-                >Message</label
-              >
-              <textarea
-                id="message"
-                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-gru focus:ring-1 focus:border-gru h-32"
-              ></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button
-                class="text-base font-semibold text-white bg-gru py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!-- End Contact -->
-
-    <!-- Footer Start -->
-    <footer class="bg-dark pt-24 pb-12">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">Desa Sumurlaban</h2>
-            <p class="font-medium text-base text-secondary">
-              Desa dengan warisan budaya yang kaya dan komunitas yang ramah.
-            </p>
-          </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Navigasi</h3>
-            <ul class="text-secondary">
-              <li>
+          <!-- Mobile Menu -->
+          <div class="hidden mobile-menu">
+            <ul class="">
+              <li class="active">
                 <a
-                  href="#home"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Beranda</a
+                  href="#"
+                  class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
+                  >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#about"
-                  class="inline-block text-base hover:text-primary mb-3"
+                  href="#"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
                   >Tentang Kami</a
                 >
               </li>
               <li>
                 <a
-                  href="#articles"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Artikel</a
+                  href="#"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  >Program</a
                 >
               </li>
               <li>
                 <a
-                  href="#gallery"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Galeri</a
+                  href="#"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  >Publikasi</a
                 >
               </li>
               <li>
                 <a
-                  href="#news"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Berita</a
+                  href="#"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  >Blog</a
                 >
               </li>
               <li>
                 <a
-                  href="#contact"
-                  class="inline-block text-base hover:text-primary mb-3"
+                  href="#"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
                   >Kontak</a
                 >
               </li>
             </ul>
           </div>
-          <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Kontak</h3>
-            <ul class="text-secondary">
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Email: info@desasumurlaban.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Telpon: +62 123 4567 890</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="inline-block text-base hover:text-primary mb-3"
-                  >Alamat: Jl. Raya Desa No. 123, Sumurlaban, Indonesia</a
-                >
-              </li>
-            </ul>
+        </header>
+
+        <!-- Hero Section -->
+        <section
+          class="relative bg-cover bg-center h-screen"
+          style="
+            background-image: url('dist/img/29.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+          "
+        >
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="container mx-auto px-6 py-20 relative z-10 text-center">
+            <h1 class="text-5xl font-bold text-white">
+              Selamat Datang di Desa Sumurlaban
+            </h1>
+            <p class="text-2xl text-white mt-2">
+              Masyarakat Peduli, Alam Terjaga
+            </p>
           </div>
-        </div>
-        <div class="w-full pt-10 border-t border-secondary">
-          <p class="font-medium text-secondary text-center">
-            &copy; 2024 Desa Sumurlaban. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer End -->
+        </section>
+
+        <!-- Info Utama Section -->
+        <section class="bg-white py-20">
+          <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Column 1 -->
+              <div class="text-center">
+                <img
+                  src="dist/img/10.jpg"
+                  alt="Partners"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">PARTNERS</h2>
+                <p class="mt-2 text-gray-600">
+                  Kami menjalin kemitraan dengan berbagai organisasi dan lembaga
+                  untuk mendukung pengembangan dan pelestarian desa kami. Dengan
+                  kerjasama ini, kami berupaya menghadirkan manfaat maksimal
+                  bagi masyarakat Desa Sumurlaban.
+                </p>
+              </div>
+              <!-- Column 2 -->
+              <div class="text-center">
+                <img
+                  src="dist/img/11.jpg"
+                  alt="Permits"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">PERMITS</h2>
+                <p class="mt-2 text-gray-600">
+                  Untuk memastikan bahwa semua kegiatan di desa dilakukan sesuai
+                  dengan peraturan yang berlaku, kami menyediakan layanan
+                  perizinan yang mudah diakses bagi semua warga dan pihak yang
+                  berkepentingan.
+                </p>
+              </div>
+              <!-- Column 3 -->
+              <div class="text-center">
+                <img
+                  src="dist/img/7.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/12.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/15.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/18.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/19.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/20.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/21.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/22.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/24.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/25.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/26.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/27.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/28.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/30.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/31.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/32.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/33.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/foto 3.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+
+              <div class="text-center">
+                <img
+                  src="dist/img/foto 4.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                />
+                <h2 class="text-xl font-bold">MISSION</h2>
+                <p class="mt-2 text-gray-600">
+                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
+                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
+                  melaksanakan berbagai program yang mendukung tujuan tersebut.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Sambutan Section -->
+        <section class="bg-gray-100 py-20">
+          <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Selamat Datang!</h2>
+            <p class="text-xl text-gray-600 mb-12">
+              Kami di Desa Sumurlaban berkomitmen untuk melindungi dan
+              meningkatkan lingkungan kami. Dengan berbagai program dan
+              kegiatan, kami berharap dapat memberikan kontribusi positif bagi
+              masyarakat dan lingkungan sekitar.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <!-- Icon 1 -->
+              <div class="text-center">
+                <div
+                  class="bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="text-lg font-bold">
+                  Inisiatif Pelestarian Lingkungan
+                </h3>
+                <p class="mt-2 text-gray-600">
+                  Kami sedang melaksanakan berbagai inisiatif untuk melindungi
+                  lingkungan desa, termasuk program daur ulang dan penanaman
+                  pohon.
+                </p>
+                <a href="#" class="text-green-500 hover:underline mt-2 block"
+                  >more</a
+                >
+              </div>
+              <!-- Icon 2 -->
+              <div class="text-center">
+                <div
+                  class="bg-gray-800 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-industry"></i>
+                </div>
+                <h3 class="text-lg font-bold">Program Pemberdayaan Ekonomi</h3>
+                <p class="mt-2 text-gray-600">
+                  Program ini bertujuan untuk meningkatkan kesejahteraan ekonomi
+                  masyarakat melalui pelatihan keterampilan dan dukungan usaha
+                  kecil.
+                </p>
+                <a href="#" class="text-green-500 hover:underline mt-2 block"
+                  >more</a
+                >
+              </div>
+              <!-- Icon 3 -->
+              <div class="text-center">
+                <div
+                  class="bg-gray-800 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-atom"></i>
+                </div>
+                <h3 class="text-lg font-bold">Kegiatan Sosial dan Budaya</h3>
+                <p class="mt-2 text-gray-600">
+                  Kami mengadakan berbagai kegiatan sosial dan budaya untuk
+                  memperkuat kebersamaan dan melestarikan tradisi lokal.
+                </p>
+                <a href="#" class="text-green-500 hover:underline mt-2 block"
+                  >more</a
+                >
+              </div>
+              <!-- Icon 4 -->
+              <div class="text-center">
+                <div
+                  class="bg-gray-800 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
+                >
+                  <i class="fas fa-water"></i>
+                </div>
+                <h3 class="text-lg font-bold">
+                  Program Pengelolaan Sumber Daya Air
+                </h3>
+                <p class="mt-2 text-gray-600">
+                  Kami fokus pada pengelolaan sumber daya air yang berkelanjutan
+                  untuk mendukung pertanian dan kebutuhan sehari-hari
+                  masyarakat.
+                </p>
+                <a href="#" class="text-green-500 hover:underline mt-2 block"
+                  >more</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Current Topics Section -->
+        <section class="bg-white py-20">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">CURRENT TOPICS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Topic 1 -->
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Calistung.jpg"
+                  alt="Topic 1"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Calistung (Baca Tulis Dan Berhitung)
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+              <!-- Topic 2 -->
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Lomba Cerdas Cermat .jpg"
+                  alt="Topic 2"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">Lomba Cerdas Cermat</h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+              <!-- Topic 3 -->
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Pembuatan dan Pemasangan Plang Area.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Pembuatan dan Pemasangan Plang Area
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Pemeriksaan Kesehatan Gratis.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Pemeriksaan Kesehatan Gratis
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Penyuluhan PHBS 2.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Penyuluhan PHBS SD Sumurlaban 2
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Penyuluhan PHBS.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Penyuluhan PHBS SD Sumurlaban 1
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Peresmian Hidroponik.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">Peresmian Hidroponik</h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Peresmian Pupuk Suburlaban.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Peresmian Pupuk Suburlaban
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Sosialisasi Literasi Digital SD Sumurlaban 2.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Sosialisasi Literasi Digital SD Sumurlaban
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/Sosialisasi Literasi Digital SMA.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">
+                  Sosialisasi Literasi Digital SMA
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+
+              <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                <img
+                  src="dist/img/kegiatan/sosialisasi UMKM.jpg"
+                  alt="Topic 3"
+                  class="w-full h-48 object-cover rounded-t-lg mb-4"
+                />
+                <h3 class="text-xl font-bold mb-2">Sosialisasi UMKM</h3>
+                <p class="text-gray-600 mb-4">
+                  Consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Ipsum, fugit!
+                </p>
+                <a href="#" class="text-green-500 hover:underline">MORE</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional Information Section -->
+        <section class="bg-gray-100 py-20">
+          <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+              <!-- Column 1 -->
+              <div>
+                <h3 class="text-2xl font-bold mb-4">
+                  01. ANTUSIASME MASYARAKAT
+                </h3>
+                <ul class="text-gray-600">
+                  <li class="mb-2">Partisipasi dalam program kesehatan</li>
+                  <li class="mb-2">Kerjasama dengan mahasiswa KKN</li>
+                  <li class="mb-2">Peningkatan kesadaran kesehatan</li>
+                </ul>
+                <a
+                  href="https://www.kompasiana.com/lilahi/669b4c76ed64153e0e471172/antusiasme-masyarakat-desa-sumurlaban-dalam-program-cek-kesehatan-gratis-oleh-mahasiswa-kkn-universitas-singaperbangsa-karawang?page=1&page_images=1"
+                  class="text-green-500 hover:underline"
+                  >SELENGKAPNYA</a
+                >
+              </div>
+              <!-- Column 2 -->
+              <div>
+                <h3 class="text-2xl font-bold mb-4">02. PROGRAM KESEHATAN</h3>
+                <ul class="text-gray-600">
+                  <li class="mb-2">Cek kesehatan gratis</li>
+                  <li class="mb-2">Penyuluhan kesehatan</li>
+                  <li class="mb-2">Kerjasama dengan tenaga medis</li>
+                </ul>
+                <a
+                  href="https://www.kompasiana.com/lilahi/669b4c76ed64153e0e471172/antusiasme-masyarakat-desa-sumurlaban-dalam-program-cek-kesehatan-gratis-oleh-mahasiswa-kkn-universitas-singaperbangsa-karawang?page=1&page_images=1"
+                  class="text-green-500 hover:underline"
+                  >SELENGKAPNYA</a
+                >
+              </div>
+              <!-- Column 3 -->
+              <div>
+                <h3 class="text-2xl font-bold mb-4">
+                  03. EDUKASI DAN AWARENESS
+                </h3>
+                <ul class="text-gray-600">
+                  <li class="mb-2">Penyuluhan gizi seimbang</li>
+                  <li class="mb-2">Pentingnya pola hidup sehat</li>
+                  <li class="mb-2">Peran mahasiswa KKN</li>
+                </ul>
+                <a
+                  href="https://www.kompasiana.com/lilahi/669b4c76ed64153e0e471172/antusiasme-masyarakat-desa-sumurlaban-dalam-program-cek-kesehatan-gratis-oleh-mahasiswa-kkn-universitas-singaperbangsa-karawang?page=1&page_images=1"
+                  class="text-green-500 hover:underline"
+                  >SELENGKAPNYA</a
+                >
+              </div>
+              <!-- Column 4 -->
+              <div>
+                <h3 class="text-2xl font-bold mb-4">04. KEGIATAN LAINNYA</h3>
+                <ul class="text-gray-600">
+                  <li class="mb-2">Pengabdian masyarakat</li>
+                  <li class="mb-2">Pelatihan kesehatan</li>
+                  <li class="mb-2">Kegiatan sosial</li>
+                </ul>
+                <a
+                  href="https://www.kompasiana.com/lilahi/669b4c76ed64153e0e471172/antusiasme-masyarakat-desa-sumurlaban-dalam-program-cek-kesehatan-gratis-oleh-mahasiswa-kkn-universitas-singaperbangsa-karawang?page=1&page_images=1"
+                  class="text-green-500 hover:underline"
+                  >SELENGKAPNYA</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="bg-white py-20">
+          <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+              <h2 class="text-3xl font-bold">Kontak Kami</h2>
+              <p class="text-gray-600 mt-4">
+                Jangan ragu untuk menghubungi kami untuk pertanyaan atau
+                informasi lebih lanjut. Kami siap membantu Anda dengan segala
+                kebutuhan terkait desa kami.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Contact Form -->
+              <form class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-bold mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="block text-gray-700 font-bold mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    for="message"
+                    class="block text-gray-700 font-bold mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-green-500 text-white py-2 rounded-lg font-bold hover:bg-green-600"
+                >
+                  Send
+                </button>
+              </form>
+              <!-- Contact Information -->
+              <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Kantor Kami</h3>
+                <p class="text-gray-700 mb-4">
+                  Alamat: Desa Sumurlaban, Karawang, Jawa Barat, Indonesia
+                </p>
+                <p class="text-gray-700 mb-4">
+                  Email:
+                  <a
+                    href="mailto:email@desa-sumurlaban.id"
+                    class="text-green-500"
+                  >
+                    kknsumurlaban@gmail.com
+                  </a>
+                </p>
+                <p class="text-gray-700 mb-4">Telepon: (123) 456-7890</p>
+                <div class="flex items-center justify-center space-x-4">
+                  <a href="#" class="text-gray-700 hover:text-green-500"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-gray-700 hover:text-green-500"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-gray-700 hover:text-green-500"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-gray-700 hover:text-green-500"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+          <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Footer Column 1 -->
+              <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p class="text-gray-400">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <!-- Footer Column 2 -->
+              <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="text-gray-400">
+                  <li class="mb-2">
+                    <a href="#" class="hover:underline">Home</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="hover:underline">About</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="hover:underline">Services</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#" class="hover:underline">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer Column 3 -->
+              <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-gray-400 hover:text-white"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400"
+            >
+              <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </body>
+    </html>
   </body>
-  <script src="dist/js/script.js"></script>
 </html>
