@@ -8,9 +8,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        gru: "#373A40",
-        dark: "#0f172a",
-        secondary: "#686D76",
+        primary: "#4CAF50",
+        secondary: "#FFC107",
+        background: "#F5F5F5",
+        accent: "#FF7043",
+        text: "#333333",
+        link: "#0288D1",
       },
       screens: {
         "2xl": "1320px",

@@ -30,7 +30,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body class="scroll-smooth bg-background text-text" >
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -49,22 +49,23 @@
             <div class="flex items-center justify-between">
               <!-- Logo -->
               <div class="text-xl font-bold text-gray-800">
-                <a href="#">Desa Sumurlaban</a>
+                <a href="#hpme">Desa Sumurlaban</a>
               </div>
               <!-- Nav -->
               <nav class="hidden md:flex space-x-4">
-                <a href="#" class="text-gray-600 hover:text-gray-800">Home</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800"
+                <a href="#home" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#About" class="text-gray-600 hover:text-gray-800"
                   >Tentang Kami</a
                 >
-                <a href="#" class="text-gray-600 hover:text-gray-800"
+                <a href="#Program" class="text-gray-600 hover:text-gray-800"
                   >Program</a
                 >
-                <a href="#" class="text-gray-600 hover:text-gray-800"
-                  >Publikasi</a
+                <a href="#Kegiatan" class="text-gray-600 hover:text-gray-800"
+                  >Kegiatan</a
                 >
-                <a href="#" class="text-gray-600 hover:text-gray-800">Blog</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">Kontak</a>
+                <a href="#Publikasi" class="text-gray-600 hover:text-gray-800">Publikasi</a>
+                <a href="#Kontak" class="text-gray-600 hover:text-gray-800">Kontak</a>
+                <a href="#Footer" class="text-gray-600 hover:text-gray-800">Footer</a>
               </nav>
               <!-- Mobile Menu Button -->
               <div class="md:hidden flex items-center">
@@ -89,44 +90,51 @@
             <ul class="">
               <li class="active">
                 <a
-                  href="#"
+                  href="#home"
                   class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#About"
                   class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
                   >Tentang Kami</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Program"
                   class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
                   >Program</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Kegiatan"
+                  class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+                  >Kegiatan</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Publikasi"
                   class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
                   >Publikasi</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Kontak"
                   class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-                  >Blog</a
+                  >Kontak</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#Footer"
                   class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-                  >Kontak</a
+                  >Footer</a
                 >
               </li>
             </ul>
@@ -141,6 +149,7 @@
             background-size: contain;
             background-repeat: no-repeat;
           "
+          id="home"
         >
           <div class="absolute inset-0 bg-black opacity-50"></div>
           <div class="container mx-auto px-6 py-20 relative z-10 text-center">
@@ -154,7 +163,11 @@
         </section>
 
         <!-- Info Utama Section -->
-        <section class="bg-white py-20" data-aos="fade-up">
+        <section class="bg-white py-20" data-aos="fade-up" id="About">
+          <h1 class="text-center text-3xl font-bold mb-8">ABOUT US</h1>
+          <p class="text-center text-xl text-gray-600 mb-12 px-6">
+          Desa Sumurlaban adalah desa yang berkomitmen untuk melestarikan lingkungan dan meningkatkan kesejahteraan masyarakatnya melalui berbagai program inovatif. Kami berfokus pada pemberdayaan ekonomi, pelestarian lingkungan, serta kegiatan sosial dan budaya yang mempererat kebersamaan dan melestarikan tradisi lokal.
+          </p>
           <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               <!-- Column 1 -->
@@ -165,13 +178,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">PARTNERS</h2>
-                <p class="mt-2 text-gray-600">
-                  Kami menjalin kemitraan dengan berbagai organisasi dan lembaga
-                  untuk mendukung pengembangan dan pelestarian desa kami. Dengan
-                  kerjasama ini, kami berupaya menghadirkan manfaat maksimal
-                  bagi masyarakat Desa Sumurlaban.
-                </p>
               </div>
               <!-- Column 2 -->
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -181,13 +187,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">PERMITS</h2>
-                <p class="mt-2 text-gray-600">
-                  Untuk memastikan bahwa semua kegiatan di desa dilakukan sesuai
-                  dengan peraturan yang berlaku, kami menyediakan layanan
-                  perizinan yang mudah diakses bagi semua warga dan pihak yang
-                  berkepentingan.
-                </p>
               </div>
               <!-- Column 3 -->
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -197,12 +196,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -212,12 +205,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -227,12 +214,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -242,12 +223,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -257,12 +232,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -272,12 +241,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -287,12 +250,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -302,12 +259,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -317,12 +268,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -332,12 +277,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -347,12 +286,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -362,12 +295,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -377,12 +304,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -392,12 +313,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -407,12 +322,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -422,12 +331,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="100">
@@ -437,12 +340,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="200">
@@ -452,12 +349,6 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
               </div>
 
               <div class="text-center" data-aos="fade-up" data-aos-delay="300">
@@ -467,20 +358,96 @@
                   class="w-full h-48 object-cover mb-4"
                   loading="lazy"
                 />
-                <h2 class="text-xl font-bold">MISSION</h2>
-                <p class="mt-2 text-gray-600">
-                  Misi kami adalah untuk menjaga kelestarian lingkungan dan
-                  meningkatkan kualitas hidup masyarakat. Kami berkomitmen untuk
-                  melaksanakan berbagai program yang mendukung tujuan tersebut.
-                </p>
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <img
+                  src="dist/img/34.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src="dist/img/35.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                <img
+                  src="dist/img/36.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <img
+                  src="dist/img/37.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src="dist/img/38.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                <img
+                  src="dist/img/39.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                <img
+                  src="dist/img/40.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                <img
+                  src="dist/img/41.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                <img
+                  src="dist/img/42.jpg"
+                  alt="Mission"
+                  class="w-full h-48 object-cover mb-4"
+                  loading="lazy"
+                />
               </div>
             </div>
           </div>
         </section>
 
         <!-- Sambutan Section -->
-        <section class="bg-gray-100 py-20">
+        <section class="bg-gray-100 py-20" id="Kegiatan">
           <div class="container mx-auto px-6 text-center" data-aos="fade-up" data-aos-duration="1000" >
+            <h2 class="text-3xl font-bold mb-4 text-gray-800">Kegiatan</h2>
             <h2 class="text-3xl font-bold mb-8">Selamat Datang!</h2>
             <p class="text-xl text-gray-600 mb-12">
               Kami di Desa Sumurlaban berkomitmen untuk melindungi dan
@@ -543,31 +510,25 @@
               </div>
               <!-- Icon 4 -->
               <div class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                <div
-                  class="bg-gray-800 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4"
-                >
-                  <i class="fas fa-water"></i>
+                <div class="bg-gray-800 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-seedling"></i>
                 </div>
-                <h3 class="text-lg font-bold">
-                  Program Pengelolaan Sumber Daya Air
-                </h3>
+                <h3 class="text-lg font-bold">Program Pertanian</h3>
                 <p class="mt-2 text-gray-600">
-                  Kami fokus pada pengelolaan sumber daya air yang berkelanjutan
-                  untuk mendukung pertanian dan kebutuhan sehari-hari
-                  masyarakat.
+                  Kami fokus pada pengembangan program pertanian yang
+                  berkelanjutan untuk meningkatkan produktivitas dan kesejahteraan
+                  petani di desa kami.
                 </p>
-                <a href="#" class="text-green-500 hover:underline mt-2 block"
-                  >more</a
-                >
+                <a href="#" class="text-green-500 hover:underline mt-2 block">more</a>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Current Topics Section -->
-        <section class="bg-white py-20 data-aos="fade-up">
+        <section class="bg-white py-20 data-aos="fade-up" id="Program">
           <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">CURRENT TOPICS</h2>
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Program</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               <!-- Topic 1 -->
               <div class="bg-gray-100 p-6 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
@@ -826,8 +787,9 @@
         </section>
 
         <!-- Additional Information Section -->
-        <section class="bg-gray-100 py-20">
+        <section class="bg-gray-100 py-20" id="Publikasi">
           <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up" data-aos-duration="1000">Publikasi</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
               <!-- Column 1 -->
               <div data-aos="fade-up" data-aos-duration="1000">
@@ -894,7 +856,7 @@
         </section>
 
         <!-- Contact Us Section -->
-        <section class="bg-white py-20">
+        <section class="bg-white py-20" id="Kontak">
           <div class="container mx-auto px-6">
             <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
               <h2 class="text-3xl font-bold">Kontak Kami</h2>
@@ -985,15 +947,14 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-8">
+        <footer class="bg-gray-800 text-white py-8" id="Footer">
           <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               <!-- Footer Column 1 -->
               <div data-aos="fade-up" data-aos-duration="1000">
                 <h3 class="text-xl font-bold mb-4">About Us</h3>
                 <p class="text-gray-400">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Desa Sumurlaban adalah desa yang berkomitmen untuk melestarikan lingkungan dan meningkatkan kesejahteraan masyarakatnya melalui berbagai program inovatif. Kami berfokus pada pemberdayaan ekonomi, pelestarian lingkungan, serta kegiatan sosial dan budaya yang mempererat kebersamaan dan melestarikan tradisi lokal. Partners Permits
                 </p>
               </div>
               <!-- Footer Column 2 -->
@@ -1001,16 +962,25 @@
                 <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                 <ul class="text-gray-400">
                   <li class="mb-2">
-                    <a href="#" class="hover:underline">Home</a>
+                    <a href="#home" class="hover:underline">Home</a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="hover:underline">About</a>
+                    <a href="#About" class="hover:underline">About Us</a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="hover:underline">Services</a>
+                    <a href="#Program" class="hover:underline">Program</a>
                   </li>
                   <li class="mb-2">
-                    <a href="#" class="hover:underline">Contact</a>
+                    <a href="#Kegiatan" class="hover:underline">Kegiatan</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#Publikasi" class="hover:underline">Publikasi</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#Kontak" class="hover:underline">Kontak</a>
+                  </li>
+                  <li class="mb-2">
+                    <a href="#Footer" class="hover:underline">Footer</a>
                   </li>
                 </ul>
               </div>
